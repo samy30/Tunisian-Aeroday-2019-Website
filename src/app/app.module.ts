@@ -13,7 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
     ],
     imports: [
         BrowserAnimationsModule,

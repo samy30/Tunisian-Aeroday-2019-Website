@@ -19,14 +19,19 @@
             "testTsconfig": "tsconfig.spec.json",
             "prefix": "app",
             "styles": [
-              "styles.scss",
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../node_modules/slick-carousel/slick/slick.css",
+              "../node_modules/slick-carousel/slick/slick-theme.css",
               "assets/sass/now-ui-kit.scss",
-              "assets/css/demo.css"
+              "assets/css/demo.css",
+              "styles.scss"
             ],
             "scripts": [
               "../node_modules/jquery/dist/jquery.min.js",
               "../node_modules/rellax/rellax.min.js",
-              "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "../node_modules/slick-carousel/slick/slick.min.js",
+              "../src/scripts.js"
             ],
             "environmentSource": "environments/environment.ts",
             "environments": {

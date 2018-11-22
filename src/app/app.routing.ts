@@ -9,6 +9,7 @@ import { LoginComponent } from './examples/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import {AeroChallengeComponent} from './examples/challenges/aero-challenge/aero-challenge.component';
+import {HistoriqueComponent} from "./components/historique/historique.component";
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -17,7 +18,8 @@ const routes: Routes =[
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
     { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'examples/Challenges/aero-challenge',     component: AeroChallengeComponent }
+    { path: 'examples/Challenges/aero-challenge',     component: AeroChallengeComponent },
+    { path: 'historique',     component: HistoriqueComponent }
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
-.container {
-  width: 1200px;
+.container2 {
+  width: 1150px;
   margin: 50px auto;
 }
 
@@ -12,8 +12,6 @@
   margin-left: 27px;
   margin-right: 26px;
   margin-top: 42px;
-  background-color: black;
-
   text-decoration: none;
   color: yellow;
   opacity: 1;
@@ -31,19 +29,6 @@
 }
 
 
-.photoMember:hover{
-  opacity: 0.5;
-}
-.photoMember:hover > div {
-  visibility: visible;
-  opacity: 1;
-}
-
-//
-//.box:hover{
-//  border: 6px solid goldenrod;
-//}
-
 
 .photoMember {
   width: 125px;
@@ -52,7 +37,6 @@
   vertical-align: middle;
   background-size: cover;
   position: absolute;
-
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 8px;
@@ -64,12 +48,18 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg) scale(1.42);
 }
+
+//.box:hover{
+//  border: 6px solid goldenrod;
+//}
+
+
 .textMember {
   width: 125px;
   height: 125px;
   display: table-cell;
   vertical-align: middle;
-  color: black;
+  color: white;
   background: transparent;
   visibility: hidden;
   position: relative;
@@ -79,30 +69,47 @@
   font-size: 8px;
   font-weight: bold;
   text-transform: uppercase;
-  //-webkit-transform: rotate(-45deg);
-  //-moz-transform: rotate(-45deg);
-  //-ms-transform: rotate(-45deg);
-  //-o-transform: rotate(-45deg);
-  //transform: rotate(-45deg) scale(1.42);
 }
 
 
+  .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: black;
+      opacity: 0.5;
+      visibility: hidden; 
+  }
 
-.container > div:nth-child(1) {
+  .overlay:hover {
+      background: black;
+      opacity: 0.5;
+    }
+    
+    .photoMember:hover > div:nth-child(1) {
+      visibility: visible;
+    }
+
+    .photoMember:hover > div:nth-child(2) {
+      visibility: visible;
+    }
+
+
+.container2 > div:nth-child(1) {
   margin-left: 205px;
 }
-.container > div:nth-child(5) {
+.container2 > div:nth-child(5) {
   margin-left: 116px;
 }
-.container > div:nth-child(16) {
+.container2 > div:nth-child(16) {
   margin-left: 116px;
 }
-.container > div:nth-child(21) {
+.container2 > div:nth-child(21) {
   margin-left: 205px;
 }
 
 
-.container > div:nth-child(n+5) {
+.container2 > div:nth-child(n+5) {
   margin-top: -36px;
 }
 

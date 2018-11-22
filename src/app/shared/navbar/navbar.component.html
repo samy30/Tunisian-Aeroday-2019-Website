@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-angular" target="_blank">
+                  <a class="nav-link" [routerLink]="['/index']">
                       <i class="now-ui-icons business_globe"></i>
                       <p>Acceuil</p>
                   </a>
@@ -26,9 +26,13 @@
                             <p>Nos Editions</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Edition 2018</a>
+                            <a class="dropdown-item" href="#">Edition 2017</a>
+                            <a class="dropdown-item" href="#">Edition 2016</a>
+                            <a class="dropdown-item" href="#">Edition 2015</a>
+                            <a class="dropdown-item" href="#">Edition 2014</a>
+                            <a class="dropdown-item" href="#">Edition 2013</a>
+                            <a class="dropdown-item" href="#">Edition 2012</a>
                         </div>
                     </div>
                 </li>
@@ -40,9 +44,11 @@
                             <p>Nos Axes</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Expositions Aéronautiques</a>
+                            <a class="dropdown-item" href="#">Expositions Aérospatiales</a>
+                            <a class="dropdown-item" href="#">Ateliers Novices</a>
+                            <a class="dropdown-item" href="#">Airshow</a>
+                            <a class="dropdown-item" href="#">Ambassadeurs</a>
                         </div>
                     </div>
                 </li>
@@ -53,20 +59,23 @@
                             <p>Nos Challenges</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/aero-challenge']">AeroChallenge</a>
+                            <a class="dropdown-item" href="#">AeroModélisme</a>
+                            <a class="dropdown-item" href="#">Challenge CAO</a>
+                            <a class="dropdown-item" href="#">AeroEntrepreneur</a>
+                            <a class="dropdown-item" href="#">Challenge Dev</a>
+                            <a class="dropdown-item" href="#">Expositions</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" href="#" target="_blank">
                         <i class="now-ui-icons business_bank"></i>
                         <p>Sponsors</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" href="#" target="_blank">
                         <i class="now-ui-icons ui-1_email-85"></i>
                         <p>Contact</p>
                     </a>

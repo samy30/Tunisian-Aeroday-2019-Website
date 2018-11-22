@@ -11,6 +11,10 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { AeroChallengeComponent } from './challenges/aero-challenge/aero-challenge.component';
+import { AeroModelismeComponent } from './challenges/aero-modelisme/aero-modelisme.component';
+import { ChallengeCaoComponent } from './challenges/challenge-cao/challenge-cao.component';
+import { AeroEntrepreneurComponent } from './challenges/aero-entrepreneur/aero-entrepreneur.component';
+import { ChallengeDevComponent } from './challenges/challenge-dev/challenge-dev.component';
 
 @NgModule({
     imports: [
@@ -28,7 +32,11 @@ import { AeroChallengeComponent } from './challenges/aero-challenge/aero-challen
         LoginComponent,
         ExamplesComponent,
         ProfileComponent,
-        AeroChallengeComponent
+        AeroChallengeComponent,
+        AeroModelismeComponent,
+        ChallengeCaoComponent,
+        AeroEntrepreneurComponent,
+        ChallengeDevComponent
     ]
 })
 export class ExamplesModule { }

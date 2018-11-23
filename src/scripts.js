@@ -22,10 +22,10 @@ function  displayMemberModel(element){
 
     $('.name-responsable').text(name);
     $('.photo-responsable').attr('src', img);
-    $('.phone-number-responsable').append(tel);
-    $('.email-responsable').append(email);
-    $('.fb-responsable').append(fb);
-    $('.post-responsable').append(post);
+    $('.phone-number-responsable').text("GSM:  "+tel);
+    $('.email-responsable').text("Email:  "+email);
+    $('.fb-responsable').text("lien Facebook:"+fb);
+    $('.post-responsable').text(post);
     $('#myModal').modal('show');
 }
 

@@ -23,10 +23,10 @@ import {NovicesComponent} from './examples/axes/novices/novices.component';
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
-    { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent },
+    // { path: 'nucleoicons',          component: NucleoiconsComponent },
+    // { path: 'examples/landing',     component: LandingComponent },
+    // { path: 'examples/login',       component: LoginComponent },
+    // { path: 'examples/profile',     component: ProfileComponent },
     { path: 'examples/Challenges/aero-challenge',     component: AeroChallengeComponent },
     { path: 'examples/Challenges/aeroModelisme',     component: AeroModelismeComponent },
     { path: 'examples/Challenges/aeroEntrepreneur',     component: AeroEntrepreneurComponent },
@@ -37,7 +37,7 @@ const routes: Routes =[
     { path: 'examples/axes/Ambassadeurs',     component: AmbassadeursComponent },
     { path: 'examples/axes/expositionsAeronautiques',     component: ExpositionsComponent },
     { path: 'examples/axes/expositionsAerospatiales',     component: AerospaceComponent },
-    { path: 'historique',     component: HistoriqueComponent }
+    // { path: 'historique',     component: HistoriqueComponent }
 ];
 
 @NgModule({

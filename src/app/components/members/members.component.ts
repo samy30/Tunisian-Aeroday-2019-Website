@@ -17,16 +17,4 @@ export class MembersComponent implements OnInit {
       }
   }
 
-  changeMember(index){
-      for (let j = 0 ; j <= 24 ; j++ ) {
-          this.membersArray[j] = false;
-      }
-      this.membersArray[index] = true;
-      console.log(this.membersArray);
-      let description = document.getElementById('description' + index);
-      let description0 = document.getElementById('description0');
-      description0.style.display = 'none' ;
-      description.style.display = 'block' ;
-  }
-
 }

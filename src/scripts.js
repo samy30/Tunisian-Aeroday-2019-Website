@@ -1,6 +1,16 @@
 
 
 $(document).ready(function(){
+
+    $('.sponsors-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+    
+  });
+
     $('.carousel24').slick({
         infinite: true,
         slidesToShow: 7,
@@ -9,7 +19,6 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000
     });
-  });
 
 function  displayMemberModel(element){
     var name = element.dataset.name;
@@ -22,11 +31,9 @@ function  displayMemberModel(element){
 
     $('.name-responsable').text(name);
     $('.photo-responsable').attr('src', img);
-    $('.phone-number-responsable').text("GSM:  "+tel);
-    $('.email-responsable').text("Email:  "+email);
-    $('.fb-responsable').text("lien Facebook:"+fb);
-    $('.post-responsable').text(post);
+    $('.phone-number-responsable').append(tel);
+    $('.email-responsable').append(email);
+    $('.fb-responsable').append(fb);
+    $('.post-responsable').append(post);
     $('#myModal').modal('show');
 }
-
-

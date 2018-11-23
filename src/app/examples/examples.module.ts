@@ -15,6 +15,11 @@ import { AeroModelismeComponent } from './challenges/aero-modelisme/aero-modelis
 import { ChallengeCaoComponent } from './challenges/challenge-cao/challenge-cao.component';
 import { AeroEntrepreneurComponent } from './challenges/aero-entrepreneur/aero-entrepreneur.component';
 import { ChallengeDevComponent } from './challenges/challenge-dev/challenge-dev.component';
+import { AirshowComponent } from './axes/airshow/airshow.component';
+import { NovicesComponent } from './axes/novices/novices.component';
+import { ExpositionsComponent } from './axes/expositions/expositions.component';
+import { AerospaceComponent } from './axes/aerospace/aerospace.component';
+import { AmbassadeursComponent } from './axes/ambassadeurs/ambassadeurs.component';
 
 @NgModule({
     imports: [
@@ -36,7 +41,12 @@ import { ChallengeDevComponent } from './challenges/challenge-dev/challenge-dev.
         AeroModelismeComponent,
         ChallengeCaoComponent,
         AeroEntrepreneurComponent,
-        ChallengeDevComponent
+        ChallengeDevComponent,
+        AirshowComponent,
+        NovicesComponent,
+        ExpositionsComponent,
+        AerospaceComponent,
+        AmbassadeursComponent
     ]
 })
 export class ExamplesModule { }

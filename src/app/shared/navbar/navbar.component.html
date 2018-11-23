@@ -44,11 +44,11 @@
                             <p>Nos Axes</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Expositions Aéronautiques</a>
-                            <a class="dropdown-item" href="#">Expositions Aérospatiales</a>
-                            <a class="dropdown-item" href="#">Ateliers Novices</a>
-                            <a class="dropdown-item" href="#">Airshow</a>
-                            <a class="dropdown-item" href="#">Ambassadeurs</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/axes/expositionsAeronautiques']">Expositions Aéronautiques</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/axes/expositionsAerospatiales']">Expositions Aérospatiales</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/axes/novices']">Ateliers Novices</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/axes/Airshow']">Airshow</a>
+                            <a class="dropdown-item" [routerLink]="['/examples/axes/Ambassadeurs']">Ambassadeurs</a>
                         </div>
                     </div>
                 </li>

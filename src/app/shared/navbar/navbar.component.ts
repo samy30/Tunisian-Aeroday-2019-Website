@@ -54,4 +54,10 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+
+    scrollPageto(link) {
+    var el = document.getElementById('#'+link);
+        el.scrollIntoView();
+}
+
 }

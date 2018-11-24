@@ -6,9 +6,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
-import { LandingComponent } from './landing/landing.component';
-import { LoginComponent } from './login/login.component';
-import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { AeroChallengeComponent } from './challenges/aero-challenge/aero-challenge.component';
 import { AeroModelismeComponent } from './challenges/aero-modelisme/aero-modelisme.component';
@@ -33,10 +30,7 @@ import { AmbassadeursComponent } from './axes/ambassadeurs/ambassadeurs.componen
         })
     ],
     declarations: [
-        LandingComponent,
-        LoginComponent,
         ExamplesComponent,
-        ProfileComponent,
         AeroChallengeComponent,
         AeroModelismeComponent,
         ChallengeCaoComponent,

@@ -4,10 +4,6 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { LoginComponent } from './examples/login/login.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import {AeroChallengeComponent} from './examples/challenges/aero-challenge/aero-challenge.component';
 import {HistoriqueComponent} from './components/historique/historique.component';
 import {AeroModelismeComponent} from './examples/challenges/aero-modelisme/aero-modelisme.component';
@@ -23,10 +19,6 @@ import {NovicesComponent} from './examples/axes/novices/novices.component';
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
-    // { path: 'nucleoicons',          component: NucleoiconsComponent },
-    // { path: 'examples/landing',     component: LandingComponent },
-    // { path: 'examples/login',       component: LoginComponent },
-    // { path: 'examples/profile',     component: ProfileComponent },
     { path: 'examples/Challenges/aero-challenge',     component: AeroChallengeComponent },
     { path: 'examples/Challenges/aeroModelisme',     component: AeroModelismeComponent },
     { path: 'examples/Challenges/aeroEntrepreneur',     component: AeroEntrepreneurComponent },
@@ -36,7 +28,7 @@ const routes: Routes =[
     { path: 'examples/axes/novices',     component: NovicesComponent },
     { path: 'examples/axes/Ambassadeurs',     component: AmbassadeursComponent },
     { path: 'examples/axes/expositionsAeronautiques',     component: ExpositionsComponent },
-    { path: 'examples/axes/expositionsAerospatiales',     component: AerospaceComponent },
+    { path: 'examples/axes/expositionsAerospatiales',     component: AerospaceComponent }
     // { path: 'historique',     component: HistoriqueComponent }
 ];
 

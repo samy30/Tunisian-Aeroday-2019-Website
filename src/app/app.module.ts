@@ -27,7 +27,7 @@ import { HistoriqueComponent } from './components/historique/historique.componen
         ComponentsModule,
         ExamplesModule
     ],
-    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

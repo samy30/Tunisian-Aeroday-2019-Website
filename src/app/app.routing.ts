@@ -15,21 +15,26 @@ import {AerospaceComponent} from './examples/axes/aerospace/aerospace.component'
 import {AmbassadeursComponent} from './examples/axes/ambassadeurs/ambassadeurs.component';
 import {ExpositionsComponent} from './examples/axes/expositions/expositions.component';
 import {NovicesComponent} from './examples/axes/novices/novices.component';
+import {SponsorsComponent} from './components/sponsors/sponsors.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
-    { path: 'examples/Challenges/aero-challenge',     component: AeroChallengeComponent },
-    { path: 'examples/Challenges/aeroModelisme',     component: AeroModelismeComponent },
-    { path: 'examples/Challenges/aeroEntrepreneur',     component: AeroEntrepreneurComponent },
-    { path: 'examples/Challenges/challengeCAO',     component: ChallengeCaoComponent },
-    { path: 'examples/Challenges/challengeDev',     component: ChallengeDevComponent },
-    { path: 'examples/axes/Airshow',     component: AirshowComponent },
-    { path: 'examples/axes/novices',     component: NovicesComponent },
-    { path: 'examples/axes/Ambassadeurs',     component: AmbassadeursComponent },
-    { path: 'examples/axes/expositionsAeronautiques',     component: ExpositionsComponent },
-    { path: 'examples/axes/expositionsAerospatiales',     component: AerospaceComponent }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home',                component: ComponentsComponent,
+        children: [
+            { path: 'sponsors', component: SponsorsComponent}
+        ] },
+    { path: 'aero-challenge',     component: AeroChallengeComponent },
+    { path: 'aeroModelisme',     component: AeroModelismeComponent },
+    { path: 'aeroEntrepreneur',     component: AeroEntrepreneurComponent },
+    { path: 'challengeCAO',     component: ChallengeCaoComponent },
+    { path: 'challengeDev',     component: ChallengeDevComponent },
+    { path: 'Airshow',     component: AirshowComponent },
+    { path: 'novices',     component: NovicesComponent },
+    { path: 'Ambassadeurs',     component: AmbassadeursComponent },
+    { path: 'expositionsAeronautiques',     component: ExpositionsComponent },
+    { path: 'expositionsAerospatiales',     component: AerospaceComponent },
     // { path: 'historique',     component: HistoriqueComponent }
+    { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

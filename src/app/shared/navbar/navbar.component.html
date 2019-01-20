@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/index']">
+            <a class="navbar-brand" [routerLink]="['/home']">
                 <span class="brand-logo"><img src="assets/img/logo.png" onerror="this.src='assets/img/logo.png'; this.onerror=null;" alt="Aeroday" class="img-responsive"></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/index']">
+                  <a class="nav-link" [routerLink]="['/home']">
                       <i class="now-ui-icons business_globe"></i>
                       <p>Acceuil</p>
                   </a>
@@ -44,11 +44,11 @@
                             <p>Nos Axes</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" [routerLink]="['/examples/axes/expositionsAeronautiques']">Expositions Aéronautiques</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/axes/expositionsAerospatiales']">Expositions Aérospatiales</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/axes/novices']">Ateliers Novices</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/axes/Airshow']">Airshow</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/axes/Ambassadeurs']">Ambassadeurs</a>
+                            <a class="dropdown-item" [routerLink]="['expositionsAeronautiques']">Expositions Aéronautiques</a>
+                            <a class="dropdown-item" [routerLink]="['expositionsAerospatiales']">Expositions Aérospatiales</a>
+                            <a class="dropdown-item" [routerLink]="['novices']">Ateliers Novices</a>
+                            <a class="dropdown-item" [routerLink]="['Airshow']">Airshow</a>
+                            <a class="dropdown-item" [routerLink]="['Ambassadeurs']">Ambassadeurs</a>
                         </div>
                     </div>
                 </li>
@@ -59,16 +59,16 @@
                             <p>Nos Challenges</p>
                         </a>
                         <div ngbDropdownMenu class="dropdown-menu">
-                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/aero-challenge']">AeroChallenge</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/aeroModelisme']">AeroModélisme</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/challengeCAO']">Challenge CAO</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/aeroEntrepreneur']">AeroEntrepreneur</a>
-                            <a class="dropdown-item" [routerLink]="['/examples/Challenges/challengeDev']">Challenge Dev</a>
+                            <a class="dropdown-item" [routerLink]="['aero-challenge']">AeroChallenge</a>
+                            <a class="dropdown-item" [routerLink]="['aeroModelisme']">AeroModélisme</a>
+                            <a class="dropdown-item" [routerLink]="['challengeCAO']">Challenge CAO</a>
+                            <a class="dropdown-item" [routerLink]="['aeroEntrepreneur']">AeroEntrepreneur</a>
+                            <a class="dropdown-item" [routerLink]="['challengeDev']">Challenge Dev</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sponsors" target="_self">
+                    <a class="nav-link" [routerLink]="['home/sponsors']">
                         <i class="now-ui-icons business_bank"></i>
                         <p>Sponsors</p>
                     </a>
@@ -80,7 +80,7 @@
                     <!--</a>-->
                 <!--</li>-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#contacts" target="_self">
+                    <a class="nav-link" [routerLink]="['home']">
                         <i class="now-ui-icons ui-1_email-85"></i>
                         <p>Contact</p>
                     </a>

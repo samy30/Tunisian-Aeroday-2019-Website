@@ -10,6 +10,7 @@ import { ComponentsComponent } from './components.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { MembersComponent } from './members/members.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
         ComponentsComponent,
         IntroductionComponent,
         MembersComponent,
-        SponsorsComponent
+        SponsorsComponent,
+        NewsComponent
     ],
     exports:[ ComponentsComponent ]
 })

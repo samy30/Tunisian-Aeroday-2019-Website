@@ -17,6 +17,7 @@ import { NovicesComponent } from './axes/novices/novices.component';
 import { ExpositionsComponent } from './axes/expositions/expositions.component';
 import { AerospaceComponent } from './axes/aerospace/aerospace.component';
 import { AmbassadeursComponent } from './axes/ambassadeurs/ambassadeurs.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 @NgModule({
     imports: [
@@ -40,7 +41,8 @@ import { AmbassadeursComponent } from './axes/ambassadeurs/ambassadeurs.componen
         NovicesComponent,
         ExpositionsComponent,
         AerospaceComponent,
-        AmbassadeursComponent
+        AmbassadeursComponent,
+        InscriptionComponent
     ]
 })
 export class ExamplesModule { }

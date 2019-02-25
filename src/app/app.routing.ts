@@ -16,6 +16,7 @@ import {AmbassadeursComponent} from './examples/axes/ambassadeurs/ambassadeurs.c
 import {ExpositionsComponent} from './examples/axes/expositions/expositions.component';
 import {NovicesComponent} from './examples/axes/novices/novices.component';
 import {SponsorsComponent} from './components/sponsors/sponsors.component';
+import {InscriptionComponent} from './examples/inscription/inscription.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes =[
     { path: 'Ambassadeurs',     component: AmbassadeursComponent },
     { path: 'expositionsAeronautiques',     component: ExpositionsComponent },
     { path: 'expositionsAerospatiales',     component: AerospaceComponent },
+    { path: 'inscription',     component: InscriptionComponent },
     // { path: 'historique',     component: HistoriqueComponent }
     { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
